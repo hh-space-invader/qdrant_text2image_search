@@ -52,7 +52,9 @@ https://docs.docker.com/engine/install/
 sudo docker compose run --build streamlit_app
 ```
 * Click on the first URL (local) when finish building the app:
+* 
 Network URL: http://172.19.0.2:8501 <-----(of course it will be different in your case)
+
 External URL: http://41.40.208.130:8501
 
 ## Notes
