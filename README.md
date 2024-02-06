@@ -63,10 +63,14 @@ External URL: http://41.40.208.130:8501
 
 ## Notes
 
-* I've provided a sample images inside data/samples, it contains images of female t-shirts (with different colors)
+* I've provided a sample images inside data/samples, it contains images of female shirts (with different colors, and shapes)
 
 * If you want to download the whole dataset, download it using the notebook code
+
+* Currently, the dataset that I'm using while embedding is in "data/samples/", you can change it inside "src/app.py"  line 57
 
 ## Furthur improvements
 
 * We can use FastAPI to create endpoint for faster and async inferences.
+
+* CLIP is based on zero-shot, if we want something prominent for shirt search, we might fine-tune it first to be more domain specific.
