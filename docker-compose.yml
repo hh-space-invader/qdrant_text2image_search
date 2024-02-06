@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+
+  streamlit_app: # our app
+    build:
+      context: . # directory of dockerfile
+      dockerfile: Dockerfile # name of dockerfile
+    container_name: txt2img_srch_streamlit # give a container name
+    ports: # expose the used port
+      - "8501:8501" # (host:docker)
+    volumes: # if file changed in host, it will automatically change in docker
+        - ./:/app #(host:docker)
+  
+  qdrant: # vector db
+    image: qdrant/qdrant:v1.7.4 # pull & build qdrant image
+    container_name: txt2img_srch_qdrant # give a container name
+    ports: # expose the used port
+      - "6333:6333" # (host:docker)

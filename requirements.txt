@@ -1,0 +1,24 @@
+# to use ipython notebook kernel
+ipykernel==6.29.0
+# to download dataset
+requests==2.31.0
+# to open image from
+pillow==10.2.0
+# for vector database
+qdrant-client==1.7.2
+# to create simple UI
+streamlit==1.30.0
+#to create stacked images
+numpy==1.26.3
+# HUGGINFACE
+transformers==4.37.2
+# will be used by huggingface(transformers as backend
+tensorflow==2.15
+# progress bar
+tqdm==4.66.1
+# for easier manupilating the (id, vec, dir)
+pandas==2.2.0
+
+
+
+
